@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: crypto-bot
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/crypto-currency
+    username: postgres
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+
+
+application:
+  telegram-bot:
+    client-url: https://api.mexc.com/api/v3/
+    username: PhototecaCryptoCurrencyBot
+    token: 6376673791:AAG_YVUVntepk7kLzBlklwKOqJTTHeulC5g
+    max-user-count: 1
+    percentage-change: 20
